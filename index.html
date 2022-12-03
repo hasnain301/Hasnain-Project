@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link href="https://api.countapi.xyz/update/mouse/laptop/?amount=1">
+</head>
+
+<body>
+
+    <!-- start header -->
+
+    <header id="header">
+        <div class="logo">
+            <a href="#"><img id="lol" src="images/logo2.png" alt=""></a>
+        </div>
+        <ul class="navigation">
+            <li><a href="#home" class="active">home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about ">About</a></li>
+            <li><a href="#contactpage">Contact</a></li>
+            <li><a href="#" id="Login">Login</a></li>
+
+
+
+            <div class="modal-container" id="modal-container">
+                <div class="modal1-dialog">
+                    <div class="modal1-img"><img src="images/modal1.jpg" width="200px" height="380px"></div>
+                    <div class="modal1">
+
+                        <div class="modal1-header">
+                            <h5 class="modal-title">LOGIN</h5>
+                            <button type="button" id="close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                        </div>
+                        <br>
+                        <form action="#" class="modal-form">
+                            <h4 class="modal-h4">EMAIL</h4>
+                            <input type="email" placeholder="Enter your Email" class="modal-email">
+                            <h4 class="modal-h3">PASSWORD</h4>
+                            <input type="password" placeholder="Enter your Password" class="modal-password" id="pass">
+                            <input type="checkbox" onclick="dis()" id="passwordcheck">
+                            <p id="show">Show password</p>
+                            <a href="#home"> <input type="button" value="LOGIN" class="modal-button"></a>
+                        </form>
+                        <button id="signup"><a href="#form">CREATE A ACCOUNT</a></button>
+
+
+                    </div>
+                </div>
+            </div>
+            <li id="vwn"><a href="" id="count" class="fas fa-eye">  0 </a>View</li>
+        </ul>
+        <div class="bars">
+            <img id="bar" src="images/menu.png" alt="">
+        </div>
+    </header>
+
+    <!-- end header -->
+
+    <!-- start home  -->
+
+    <div class="big-bg" id="home">
+        <div class="bg-content">
+            <h1>Modern interior & design</h1>
+            <hr>
+            <p>
+                We make our products in the best shape for your happiness, <br> so we hope to build a bridge of trust with you.
+            </p>
+            <div class="bg-link">
+                <a href="#">shop Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- end home  -->
+
+    <!-- start second section  -->
+
+
+    <div class="big-collection">
+        <div class="collect-flex">
+            <div class="collect">
+                <div class="image">
+                    <img src="images/chair4.jpg" alt="">
+                </div>
+                <div class="link">
+                    <a href="#">chair</a>
+                </div>
+            </div>
+
+            <div class="collect">
+                <div class="image">
+                    <img src="images/chair5.jpg" alt="">
+                </div>
+                <div class="link">
+                    <a href="#">decoration</a>
+                </div>
+            </div>
+
+            <div class="collect">
+                <div class="image">
+                    <img src="images/chair3.jpg" alt="">
+                </div>
+                <div class="link">
+                    <a href="#">furniture</a>
+                </div>
+            </div>
+
+            <div class="collect">
+                <div class="image">
+                    <img src="images/bed.jpg" alt="">
+                </div>
+                <div class="link">
+                    <a href="#">bed</a>
+                </div>
+            </div>
+
+            <div class="collect">
+                <div class="image">
+                    <img src="images/chair2.jpg" alt="">
+                </div>
+                <div class="link">
+                    <a href="#">armchair</a>
+                </div>
+            </div>
+
+            <div class="collect">
+                <div class="image">
+                    <img src="images/couch.jpg" alt="">
+                </div>
+                <div class="link">
+                    <a href="#">couch</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- end second section  -->
+
+
+    <!-- start section three  -->
+
+
+    <div class="big-shop" id="gallery">
+        <div class="shop-title">
+            <h2>
+                Our Gallery
+            </h2>
+            <p>
+                Gallrey is the most important for client & viewers
+            </p>
+        </div>
+        <div class="shop-flex">
+            <div class="shop-one">
+
+                <div class="image-one">
+                    <img src="images/sw1.jpg" alt="">
+                    <div class="overlay">
+                        <div class="txt">
+                            <h3>Swing Chair</h3>
+                            <section>
+                                <span>Furniture</span> / Design
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-one">
+                    <img src="images/homede.jpg" alt="">
+                    <div class="overlay">
+                        <div class="txt">
+                            <h3>Home decor</h3>
+                            <section>
+                                <span>Furniture</span> / Design
+                            </section>
+                            <div class="link">
+                                <a href="#shop">Shop Now <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="shop-one">
+
+                <div class="image-one">
+                    <img src="images/furn3.jpg" alt="">
+                    <div class="overlay">
+                        <div class="txt">
+                            <h3>Black Chair</h3>
+                            <section>
+                                <span>Furniture</span> / Design
+                            </section>
+                            <div class="link">
+                                <a href="#shop">Shop Now <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-one">
+                    <img src="images/fancy.jpg" alt="">
+                    <div class="overlay">
+                        <div class="txt">
+                            <h3>Fancy lamp</h3>
+                            <section>
+                                <span>Furniture</span> / Design
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="shop-two">
+                <img src="images/bed9.jpg" alt="">
+                <div class="overlay">
+                    <div class="txt">
+                        <h3>Decent Bed</h3>
+                        <section>
+                            <span>Furniture</span> / Design
+                        </section>
+                        <div class="link">
+                            <a href="#shop">Shop Now <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- end section three  -->
+
+
+    <div class="gallery" id="shop">
+
+        <ul class="controls">
+            <li class="buttons active" data-filter="all">All</li>
+            <li class="buttons" data-filter="living-room">Living room</li>
+            <li class="buttons" data-filter="kitchen">Kitchen</li>
+            <li class="buttons" data-filter="beds">Beds</li>
+            <li class="buttons" data-filter="chairs">Chairs</li>
+            <li class="buttons" data-filter="table">Table</li>
+            <li class="buttons" data-filter="matress">Matress</li>
+        </ul>
+
+        <div class="image-container">
+
+            <a href="images/living room.jpg" class="image living-room">
+                <img src="images/living room.jpg" alt="">
+            </a>
+            <a href="images/living room1.jpg" class="image living-room">
+                <img src="images/living room1.jpg" alt="">
+            </a>
+            <a href="images/living room2.jpg" class="image living-room">
+                <img src="images/living room2.jpg" alt="">
+            </a>
+
+            <a href="images/living room 5.jpg" class="image living-room">
+                <img src="images/living room 5.jpg" alt="">
+            </a>
+            <a href="images/livingt room 3.jpg" class="image  living-room">
+                <img src="images/livingt room 3.jpg" alt="">
+            </a>
+
+            <a href="images/kt2.jpg" class="image kitchen">
+                <img src="images/kt2.jpg" alt="">
+            </a>
+            <a href="images/kitchen1.jpg" class="image kitchen">
+                <img src="images/kitchen1.jpg" alt="">
+            </a>
+            <a href="images/kitchen2.jpg" class="image kitchen">
+                <img src="images/kitchen2.jpg" alt="">
+            </a>
+            <a href="images/kitchen3.jpg" class="image kitchen">
+                <img src="images/kitchen3.jpg" alt="">
+            </a>
+            <a href="images/kt3.jpg" class="image kitchen">
+                <img src="images/kt3.jpg" alt="">
+            </a>
+
+            <a href="images/chairset.jpg" class="image chairs">
+                <img src="images/chairset.jpg" alt="">
+            </a>
+            <a href="images/chairs3.jpg" class="image chairs">
+                <img src="images/chairs3.jpg" alt="">
+            </a>
+            <a href="images/chairs1.jpg" class="image chairs">
+                <img src="images/chairs1.jpg" alt="">
+            </a>
+
+            <a href="images/chairs6.jpg" class="image chairs">
+                <img src="images/chairs6.jpg" alt="">
+            </a>
+            <a href="images/3dbed1.jpg" class="image beds">
+                <img src="images/3dbed1.jpg" alt="">
+            </a>
+            <a href="images/bed1.jpg" class="image beds">
+                <img src="images/bed1.jpg" alt="">
+            </a>
+            <a href="images/bedroom.jpg" class="image beds">
+                <img src="images/bedroom.jpg" alt="">
+            </a>
+            <a href="images/bed.jpg" class="image beds">
+                <img src="images/bed.jpg" alt="">
+            </a>
+            <a href="images/3dbed2.jpg" class="image beds">
+                <img src="images/3dbed2.jpg" alt="">
+            </a>
+            <a href="images/3d3.jpg" class="image beds">
+                <img src="images/3d3.jpg" alt="">
+            </a>
+            <a href="images/bedrooom4.jpg" class="image beds">
+                <img src="images/bedrooom4.jpg" alt="">
+            </a>
+            <a href="images/table.jpg" class="image table">
+                <img src="images/table.jpg" alt="">
+            </a>
+            <a href="images/tab3.jpg" class="image table">
+                <img src="images/tab3.jpg" alt="">
+            </a>
+            <a href="images/tab5.jpg" class="image table">
+                <img src="images/tab5.jpg" alt="">
+            </a>
+            <a href="images/table (2).jpg" class="image table">
+                <img src="images/table (2).jpg" alt="">
+            </a>
+            <a href="images/tab4.jpg" class="image table">
+                <img src="images/tab4.jpg" alt="">
+            </a>
+            <a href="images/tab6.jpg" class="image table">
+                <img src="images/tab6.jpg" alt="">
+            </a>
+            <a href="images/tab2.jpg" class="image table">
+                <img src="images/tab2.jpg" alt="">
+            </a>
+            <a href="images/tab1.jpg" class="image table">
+                <img src="images/tab1.jpg" alt="">
+            </a>
+
+            <a href="images/mat1.jpg" class="image matress">
+                <img src="images/mat1.jpg" alt="">
+            </a>
+            <a href="images/mat2.jpg" class="image matress">
+                <img src="images/mat2.jpg" alt="">
+            </a>
+            <a href="images/mat3.jpg" class="image matress">
+                <img src="images/mat3.jpg" alt="">
+            </a>
+            <a href="images/mat4.jpg" class="image matress">
+                <img src="images/mat4.jpg" alt="">
+            </a>
+            <a href="images/mat5.jpg" class="image matress">
+                <img src="images/mat5.jpg" alt="">
+            </a>
+            <a href="images/matress.jpg" class="image matress">
+                <img src="images/matress.jpg" alt="">
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="browse">
+        <div class="title">
+            <p>
+                browse our items
+            </p>
+            <h2>
+                Ideal for your home
+            </h2>
+            <hr>
+        </div>
+        <div class="flex">
+            <div class="product-one">
+                <div class="product-image">
+                    <img src="images/product1.jpg" alt="">
+                    <div class="overlay">
+                        <i class="fas fa-shopping-bag"></i>
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="c">
+                    <div class="left">
+                        <h4>
+                            White vase
+                        </h4>
+                    </div>
+                    <div class="right">
+                        <section>$44.00</section>
+                    </div>
+                </div>
+                <article>decoration</article>
+            </div>
+
+
+            <div class="product-one">
+                <div class="product-image">
+                    <img src="images/product2.jpg" alt="">
+                    <div class="overlay">
+                        <i class="fas fa-shopping-bag"></i>
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="c">
+                    <div class="left">
+                        <h4>
+                            neon light
+                        </h4>
+                    </div>
+                    <div class="right">
+                        <section>$16.00</section>
+                    </div>
+                </div>
+                <article>lighting</article>
+            </div>
+
+
+            <div class="product-one">
+                <div class="product-image">
+                    <img src="images/product3.jpg" alt="">
+                    <div class="overlay">
+                        <i class="fas fa-shopping-bag"></i>
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="c">
+                    <div class="left">
+                        <h4>
+                            gray chair
+                        </h4>
+                    </div>
+                    <div class="right">
+                        <section>$53.00</section>
+                    </div>
+                </div>
+                <article>furniture</article>
+            </div>
+
+
+            <div class="product-one">
+                <div class="product-image">
+                    <img src="images/product4.jpg" alt="">
+                    <div class="overlay">
+                        <i class="fas fa-shopping-bag"></i>
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="c">
+                    <div class="left">
+                        <h4>
+                            cup holder
+                        </h4>
+                    </div>
+                    <div class="right">
+                        <section>$19.00</section>
+                    </div>
+                </div>
+                <article>decoration</article>
+            </div>
+
+
+            <div class="product-one">
+                <div class="product-image">
+                    <img src="images/product5.jpg" alt="">
+                    <div class="overlay">
+                        <i class="fas fa-shopping-bag"></i>
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="c">
+                    <div class="left">
+                        <h4>
+                            White vase
+                        </h4>
+                    </div>
+                    <div class="right">
+                        <section>$26.00</section>
+                    </div>
+                </div>
+                <article>decoration</article>
+            </div>
+
+            <div class="product-one">
+                <div class="product-image">
+                    <img src="images/product6.jpg" alt="">
+                    <div class="overlay">
+                        <i class="fas fa-shopping-bag"></i>
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="c">
+                    <div class="left">
+                        <h4>
+                            gray sofa
+                        </h4>
+                    </div>
+                    <div class="right">
+                        <section>$165.00</section>
+                    </div>
+                </div>
+                <article>furniture</article>
+            </div>
+
+            <div class="product-one">
+                <div class="product-image">
+                    <img src="images/product7.jpg" alt="">
+                    <div class="overlay">
+                        <i class="fas fa-shopping-bag"></i>
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="c">
+                    <div class="left">
+                        <h4>
+                            baby chair
+                        </h4>
+                    </div>
+                    <div class="right">
+                        <section>$120.00</section>
+                    </div>
+                </div>
+                <article>furniture</article>
+            </div>
+
+            <div class="product-one">
+                <div class="product-image">
+                    <img src="images/product8.jpg" alt="">
+                    <div class="overlay">
+                        <i class="fas fa-shopping-bag"></i>
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="c">
+                    <div class="left">
+                        <h4>
+                            read chair
+                        </h4>
+                    </div>
+                    <div class="right">
+                        <section>$115.00</section>
+                    </div>
+                </div>
+                <article>furniture</article>
+            </div>
+
+        </div>
+    </div>
+
+ <!-------------service----------------->
+ <div class="container">
+    <h2 class="h">Our <span>Services</span></h2>
+    
+    <div class="row">
+        <div class="col s12 m6 l4">
+            <div class="single-service center-align">
+                <i class="lni lni-cart"></i>
+                <h2>Free Shipping</h2>
+                <p>
+                    We Shop enable Free shipping an easier way to get access to reduce shipping opportunities.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="col s12 m6 l4">
+            <div class="single-service center-align">
+                <i class="lni lni-grow"></i>
+                <h2>DOMESTIC</h2>
+                <p>
+                    Homerserve offers in house repairs to the public for leather and fabric furniture, cabinets, recliners, beds and more.
+                 </p>
+            </div>
+        </div>
+
+
+
+        <div class="col s12 m6 l4">
+            <div class="single-service center-align">
+                <i class="lni lni-handshake"></i>
+                <h2>MANUFACTURERS</h2>
+                <p>
+                    If your customers are unhappy with their furniture, Homeserve can get out to fix their faults within 5 days. Saving you b replacement.
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+ </div>
+
+
+
+
+      <!-- card2 -->
+      <div class="container">
+        <div class="services">
+            <b href="#">
+                <span class="single-img img-one">
+                    <span class="img-text" id="tpc">
+                        <h4>Bedroom Items</h4>
+                        <p>Best Bedroom Items to Decor Your Bedroom Furniture. Hudson Furnishings.</p>
+                        <button>View More</button>
+                    </span>
+                </span>
+            </b>
+            <b href="#">
+                <span class="single-img img-two"> 
+                    <span class="img-text" id="tpc">
+                        <h4>Dinning Room Items</h4>
+                        <p>Best Dinning Room Items to Decor Your Dinning Room Furniture. Hudson Furnishings.</p>
+                        <button>View More</button>
+                    </span>
+                </span>
+            </b>
+            <b href="#">
+                <span class="single-img img-three">
+                    <span class="img-text" id="tpc">
+                        <h4>Living Room</h4>
+                        <p>Best Living Room Items to Decor Your Living Room Furniture. Hudson Furnishings.</p>
+                        <button>View More</button>
+                    </span>
+                </span>
+            </b>
+          </div>
+        </div>
+        </div>
+
+
+
+
+       <!-- card3 -->
+       <div class="container">
+        <h3 class="text-center" style="margin-top: 40px; margin-bottom: 20px;font-size: 30px;">BED<span style="margin-top: 40px; margin-bottom: 20px;font-size: 40px; color: brown;">Room</span></h3>
+        <div class="services">
+               <b href="#">
+                   <div class="product">
+                   <span class="single-img1 img-a">
+                       <span class="img-text1">
+                           <h4>Modern Bed</h4>
+                           <p>Get swept away with our Rivera Bedroom Collection.</p>
+                           <div class="btn3 popup-btn"><button>Shop Now</button></div>
+                       </span>
+                   </span>
+                       <div class="popup-view">
+                           <div class="popup-card">
+                               <i class="fa fa-times close-btn" aria-hidden="true"></i>
+                               <div class="product-img">
+                               <img src="images/bed (2).jpg" alt="">
+                             </div>
+                             <div class="info">
+                               <h2>Modern Bed<br><span>Hudson Furnishings</span></h2>
+                               <p>Get swept away with our Rivera Bedroom Collection. Inset paneling gets b fresh look in b whitewashed finish, perfect for bridging the gap between modern and traditional styles. Elevated legs and b tall statement headboard give this wooden bed more than enough presence to be the star of your sanctuary at home</p>
+                               <span class="price">$120.00</span>
+                               <b href="#" class="add-cart-btn">Add to Cart</b>
+                               <b href="#" class="add-wish">Add to Wishlist</b>
+                             </div>
+                           </div>
+                         </div>
+           
+                       </div>       
+                    </b>
+                    <b href="#">
+                      <div class="product">
+                      <span class="single-img1 img-b">
+                          <span class="img-text1">
+                              <h4>modern sofa</h4>
+                              <p>sofa is the combination of comfort & beauty, this comfort your life.</p>
+                              <div class="btn3 popup-btn"><button>Shop Now</button></div>
+                          </span>
+                      </span>
+                      <div class="popup-view">
+                          <div class="popup-card">
+                              <i class="fa fa-times close-btn" aria-hidden="true"></i>
+                              <div class="product-img">
+                              <img src="images/modern sofa.jpg" alt="">
+                            </div>
+                            <div class="info">
+                              <h2>modern sofa<br><span>Hudson Furnishings</span></h2>
+                              <p>Arc sofa is the combination of comfort and beauty, perfect for any residential or commercial space. It has a modern design, with a stylish look that can fit in any home or office. Its great comfort will assure you a good night sleep when you want to relax at home after a long day.</p>
+                              <span class="price">$120.00</span>
+                              <a href="#" class="add-cart-btn">Add to Cart</a>
+                              <a href="#" class="add-wish">Add to Wishlist</a>
+                            </div>
+                          </div>
+                        </div>
+          
+                  </div>
+                </b>
+       
+       
+               <b href="#">
+                <div class="product">
+                <span class="single-img1 img-c">
+                    <span class="img-text1">
+                        <h4>Cupdord</h4>
+                        <p>Best Home Elise Four Door Cupboard Hudson Furnishings .</p>
+                        <div class="btn3 popup-btn"><button>Shop Now</button></div>
+                    </span>
+                </span>
+                <div class="popup-view">
+                    <div class="popup-card">
+                        <i class="fa fa-times close-btn" aria-hidden="true"></i>
+                        <div class="product-img">
+                        <img src="images/cupdord.jpg" alt="">
+                      </div>
+                      <div class="info">
+                        <h2>Cupdord<br><span>Hudson Furnishings</span></h2>
+                        <p>Laminated Engineered Wood
+                         Colour as per your theme and choice
+                         Drawer with metal runners
+                         One Drawer
+                         Four Door Cupboard</p>
+                        <span class="price">$120.00</span>
+                        <b href="#" class="add-cart-btn">Add to Cart</b>
+                        <b href="#" class="add-wish">Add to Wishlist</b>
+                      </div>
+                    </div>
+                  </div>
+    
+            </div>
+            </b>
+           </div>
+
+           <h3 class="text-center" style="margin-top: 40px; margin-bottom: 20px;font-size: 30px;">LIVING <span style="margin-top: 40px; margin-bottom: 20px;font-size: 40px; color: brown;">Room</span></h3>
+
+           <div class="services">
+       
+               <b href="#">
+                               <div class="product">
+                   <span class="single-img1 img-four">
+                       <span class="img-text1">
+                           <h4>Chair-set</h4>
+                           <p>Chairs style has never been this comfort. Beautiful from every angle.</p>
+                           <div class="btn3 popup-btn"><button>Shop Now</button></div>
+                       </span>
+                   </span>
+                   <div class="popup-view">
+                       <div class="popup-card">
+                           <i class="fa fa-times close-btn" aria-hidden="true"></i>
+                           <div class="product-img">
+                           <img src="images/chairset.jpg" alt="">
+                         </div>
+                         <div class="info">
+                           <h2>Chair-set<br><span>Hudson Furnishings</span></h2>
+                           <p>Statement style has never been this comfortable. Beautiful from every angle, our Rowe Armchair is an excellent choice for open concept spaces. Supported by an upholstered base and metal legs, Rowe's sloped arms and plump cushions create the perfect landing place for relaxing with b book or b glass of wine at the end of the day. Float this stunning armchair in your living room for elevated seating in trending mixed materials.</p>
+                           <span class="price">$120.00</span>
+                           <b href="#" class="add-cart-btn">Add to Cart</b>
+                           <b href="#" class="add-wish">Add to Wishlist</b>
+                         </div>
+                       </div>
+                     </div>
+       
+                   </div>
+               </b>
+       
+       
+               <b href="#">
+                   <div class="product">
+                   <span class="single-img1 img-five"> 
+                       <span class="img-text1">
+                           <h4>Furniture set</h4>
+                           <p>Bedroom Set Beautiful from every angle, is an excellent choice.</p>
+                           <div class="btn3 popup-btn"><button>Shop Now</button></div>
+                       </span>
+                   </span>
+                   <div class="popup-view">
+                       <div class="popup-card">
+                           <i class="fa fa-times close-btn" aria-hidden="true"></i>
+                           <div class="product-img">
+                           <img src="images/living room4.jpg" alt="">
+                         </div>
+                         <div class="info">
+                           <h2>Furniture set<br><span>Hudson Furnishings</span></h2>
+                           <p>Statement style has never been this comfortable. Beautiful from every angle, our Rowe Armchair is an excellent choice</p>
+                           <span class="price">$120.00</span>
+                           <b href="#" class="add-cart-btn">Add to Cart</b>
+                           <b href="#" class="add-wish">Add to Wishlist</b>
+                         </div>
+                       </div>
+                     </div>
+               </div>
+               </b>
+       
+       
+               <b href="#">
+                <div class="product">
+                <span class="single-img1 img-d"> 
+                    <span class="img-text1">
+                        <h4>Sofa</h4>
+                        <p>You'll feel comfort sitting on our sofa even after a long day's work.</p>
+                        <div class="btn3 popup-btn"><button>Shop Now</button></div>
+                    </span>
+                </span>
+                <div class="popup-view">
+                    <div class="popup-card">
+                        <i class="fa fa-times close-btn" aria-hidden="true"></i>
+                        <div class="product-img">
+                         <img src="images/sofa.jpg" alt="">
+                     </div>
+                      <div class="info">
+                        <h2> Sofa<br><span>Hudson Furnishings</span></h2>
+                        <p>Our Lambswool Cuppa Sofa is made from 100% pure lambswool and filled with a thick layer of soft polyester fibre to give you the ultimate luxury experience. You'll feel completely comfortable sitting on our sofa even after a long day's work. The softness of this sofa will bring a relaxing atmosphere to your home and invite you to relax and enjoy in comfort</p>
+                        <span class="price">$120.00</span>
+                        <a href="#" class="add-cart-btn">Add to Cart</a>
+                        <a href="#" class="add-wish">Add to Wishlist</a>
+                      </div>
+                    </div>
+                  </div>
+    
+            </div>
+          </b>
+           </div>
+       
+           <h3 class="text-center" style="margin-top: 40px; margin-bottom: 20px;font-size: 30px;">DINNING <span style="margin-top: 40px; margin-bottom: 20px;font-size: 40px; color: brown;">Room</span></h3>
+
+           <div class="services">
+       
+               <b href="#">
+                               <div class="product">
+                   <span class="single-img1 img-1">
+                       <span class="img-text1">
+                           <h4>Kitchen chests </h4>
+                           <p>Kitchen Best 6 Drawer Dresser -Meyer Dove Hudson Furnishing.</p>
+                           <div class="btn3 popup-btn"><button>Shop Now</button></div>
+                       </span>
+                   </span>
+                   <div class="popup-view">
+                       <div class="popup-card">
+                           <i class="fa fa-times close-btn" aria-hidden="true"></i>
+                           <div class="product-img">
+                           <img src="images/chests furniture.jpg" alt="">
+                         </div>
+                         <div class="info">
+                           <h2>Kitchen chests<br><span>Hudson Furnishings</span></h2>
+                           <p>Update your bedroom with breezy style. Inspired by cottage interiors, our Fairmont Collection brings b two-tone look in off-white and warm dark grey. Textured wood adds b durable finish fit for busy homes. Complete with six roomy drawers, this dresser keeps your bedroom organized in style.</p>
+                           <span class="price">$120.00</span>
+                           <b href="#" class="add-cart-btn">Add to Cart</b>
+                           <b href="#" class="add-wish">Add to Wishlist</b>
+                         </div>
+                       </div>
+                     </div>
+       
+                   </div>
+               </b>
+       
+       
+               <b href="#">
+                <div class="product">
+                <span class="single-img1 img-seven">
+                    <span class="img-text1">
+                        <h4>Dinning table</h4>
+                        <p>Missri Design Dinning Table Best colour and Design .</p>
+                        <div class="btn3 popup-btn"><button>Shop Now</button></div>
+                    </span>
+                </span>
+                <div class="popup-view">
+                    <div class="popup-card">
+                        <i class="fa fa-times close-btn" aria-hidden="true"></i>
+                        <div class="product-img">
+                        <img src="images/dinning table.jpg" alt="">
+                      </div>
+                      <div class="info">
+                        <h2>Dinning table<br><span>Hudson Furnishings</span></h2>
+                        <p>Missri Design Dining Table
+
+                         Material: Sheesham Wood
+                         
+                         Color: Can be Change As Per Your Requirements
+                         
+                         Eight Chairs
+                         
+                         Made To Order
+                         
+                         Standard For The Design</p>
+                        <span class="price">$120.00</span>
+                        <a href="#" class="add-cart-btn">Add to Cart</a>
+                        <a href="#" class="add-wish">Add to Wishlist</a>
+                      </div>
+                    </div>
+                  </div>
+    
+            </div>
+          </b>
+       
+       
+               <b href="#">
+                <div class="product">
+                <span class="single-img1 img-six">
+                    <span class="img-text1">
+                        <h4>Dinning table set</h4>
+                        <p>Missri Design Dinning Table Best colour and Design .</p>
+                        <div class="btn3 popup-btn"><button>Shop Now</button></div>
+                    </span>
+                </span>
+                <div class="popup-view">
+                    <div class="popup-card">
+                        <i class="fa fa-times close-btn" aria-hidden="true"></i>
+                        <div class="product-img">
+                        <img src="images/table (2).jpg" alt="">
+                      </div>
+                      <div class="info">
+                        <h2>Dinning table Set<br><span>Hudson Furnishings</span></h2>
+                        <p>Missri Design Dining Table
+
+                         Material: Sheesham Wood
+                         
+                         Color: Can be Change As Per Your Requirements
+                         
+                         Eight Chairs
+                         
+                         Made To Order
+                         
+                         Standard For The Design</p>
+                        <span class="price">$120.00</span>
+                        <a href="#" class="add-cart-btn">Add to Cart</a>
+                        <a href="#" class="add-wish">Add to Wishlist</a>
+                      </div>
+                    </div>
+                  </div>
+    
+            </div>
+          </b>
+           </div>
+       
+           <h3 class="text-center" style="margin-top: 40px; margin-bottom: 20px;font-size: 30px;">OFFICE <span style="margin-top: 40px; margin-bottom: 20px;font-size: 40px; color: brown;">Room</span></h3>
+
+           <div class="services">
+       
+               <b href="#">
+                               <div class="product">
+                   <span class="single-img1 img-4">
+                       <span class="img-text1">
+                           <h4>wall clock</h4>
+                           <p>Best Home Wall Clock Dresden Wall Clock Hudson Furnishings.</p>
+                           <div class="btn3 popup-btn"><button>Shop Now</button></div>
+                       </span>
+                   </span>
+                   <div class="popup-view">
+                       <div class="popup-card">
+                           <i class="fa fa-times close-btn" aria-hidden="true"></i>
+                           <div class="product-img">
+                           <img src="images/clock.jpg" alt="">
+                         </div>
+                         <div class="info">
+                           <h2> Wall clock<br><span>Hudson Furnishings</span></h2>
+                           <p>With its weathered wood face, classic roman numerals and detailed hands, our Dresden Wall Clock has the charm and sentiment of an inherited piece..</p>
+                           <span class="price">$120.00</span>
+                           <b href="#" class="add-cart-btn">Add to Cart</b>
+                           <b href="#" class="add-wish">Add to Wishlist</b>
+                         </div>
+                       </div>
+                     </div>
+       
+                   </div>
+               </b>
+       
+       
+               <b href="#">
+                   <div class="product">
+                   <span class="single-img1 img-5"> 
+                       <span class="img-text1">
+                           <h4>Trundle-bed</h4>
+                           <p>Best trundle is often b Twin trundle bed that is low to the ground.</p>
+                           <div class="btn3 popup-btn"><button>Shop Now</button></div>
+                       </span>
+                   </span>
+                   <div class="popup-view">
+                       <div class="popup-card">
+                           <i class="fa fa-times close-btn" aria-hidden="true"></i>
+                           <div class="product-img">
+                           <img src="images/trundle-bed.jpg" alt="">
+                         </div>
+                         <div class="info">
+                           <h2>Trundle-bed<br><span>Hudson Furnishings</span></h2>
+                           <p>A trundle is often b Twin trundle bed that is low to the ground and on wheels, but Full-sized trundles are also not uncommon. In order to ensure easy storage and pull-out mechanisms, the lower mattress is usually thinner than that of b standard mattress. A typical trundle mattress is 8" thick.</p>
+                           <span class="price">$120.00</span>
+                           <b href="#" class="add-cart-btn">Add to Cart</b>
+                           <b href="#" class="add-wish">Add to Wishlist</b>
+                         </div>
+                       </div>
+                     </div>
+               </div>
+               </b>
+       
+       
+               <b href="#">
+                <div class="product">
+                <span class="single-img1 img-2"> 
+                    <span class="img-text1">
+                        <h4 >Desk</h4>
+                        <p> Best Office Desk Jericho Reclaimed Wood Home Office Desk.</p>
+                        <div class="btn3 popup-btn"><button>Shop Now</button></div>
+                    </span>
+                </span>
+                <div class="popup-view">
+                    <div class="popup-card">
+                        <i class="fa fa-times close-btn" aria-hidden="true"></i>
+                        <div class="product-img">
+                        <img src="images/Desk.jpg" alt="">
+                      </div>
+                      <div class="info">
+                        <h2>Desk<br><span>Hudson Furnishings</span></h2>
+                        <p>Designed for modern homes, the Jericho Desk brings urban loft inspiration to keep you working in style. Finished on all sides so it can stand freely in your home office, Jericho’s clean profile pairs sleek metal legs and a rustic desktop made with reclaimed wood salvaged from pallets in Europe. Use three slim drawers to keep your laptop, chargers and notebooks concealed but close at hand</p>
+                        <span class="price">$120.00</span>
+                        <a href="#" class="add-cart-btn">Add to Cart</a>
+                        <a href="#" class="add-wish">Add to Wishlist</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </b>
+           </div>
+           </div>
+
+           
+       </div>
+</div>
+
+
+
+          </div>
+      </div>
+  </div>
+    <!-- card3 -->
+
+    <!--------- testimonial --------->
+    <h2 class="text">Customer <span>Reviews</span></h2>
+
+    <div class="wrapper">
+      <div class="box">
+        <i class="fa fa-quote-left"></i>
+        <p>Very well done in terms of quality. Especially the service was  Very good and delivered in the given time frame.
+        </p>
+        <div class="co">
+          <div class="info">
+            <div class="name">Alex Smith</div>
+            <div class="job">Customer</div>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+          </div>
+          <div class="image">
+            <img src="images/profile-1.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <i class="fa fa-quote-left"></i>
+        <p>Its My Second Order This is my second bed from Hudson Furnishings and this is also in superb quality. Also i have found the prices reasonable.
+        </p>
+        <div class="co">
+          <div class="info">
+            <div class="name">Steven Chris</div>
+            <div class="job">Customer</div>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+          </div>
+          <div class="image">
+            <img src="images/profile-2.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <i class="fa fa-quote-left"></i>
+        <p>It was a good experience with Hudson Furnishings The overall bed quality is Very Good. Satisfied with the complete experience.
+        </p>
+        <div class="co">
+          <div class="info">
+            <div class="name">Kristina Bellis</div>
+            <div class="job">Customer</div>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+          </div>
+          <div class="image">
+            <img src="images/profile-3.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!---------about us section------------>
+
+    <section>
+        <div class="heade" id="about">
+            <div class="txt">
+                <h1>About Us</h1>
+                <p>If you want to know About Us so you’re in the right place.</p>
+                <ul>
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></li></a>
+                        <li><a href="https://twitter.com/Mashkoor615101"><i class="fa fa-twitter"></i></li></a>
+                            <li><a href="https://www.github.com/"><i class="fa fa-github"></i></li></a>
+                                <li><a href="https://www.whatsapp.com/"><i class="fa fa-whatsapp"></i></li></a>
+                                    <li><a href="https://www.instagram.com/mashkoor.ahmed_official/"><i class="fa fa-instagram"></i></li></a>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="our">
+            <h2>Our mindset</h2>
+            <li><i class="fa fa-smile-o"></i></li>
+            <P>
+                We believe in innovating the entire furniture industry and we think we have done good so far, <span>ALHAMDULILLAH</span> However, there is a long way to go and we are right on track. <span>insha’Allah</span> what comes next will be even
+                better along the journey.</P>
+
+            <p>
+                <span>“Something for everyone”</span> is what we work for. And this single motto enables us to provide a huge range of furniture that fulfills your needs. At the same time,
+                <span>“quality”</span>is our slogan. We are here to rule and to rule means: we are here to provide the best furniture at the best possible price. Love us and we won’t ditch you!</p>
+        </div>
+
+
+
+
+        <div id="about-2">
+            <div class="content-box-lg">
+                <div class="container1">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="about-item text-center">
+                                <i class="fa fa-book"></i>
+                                <h3>MISSION</h3>
+                                <hr>
+                                <p>Innovating the entire online furniture industry with unmatched features and providing a range, quality, and prices that furniture buyers are unlikely to find elsewhere!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="about-item text-center">
+                                <i class="fa fa-globe"></i>
+                                <h3>VISSION</h3>
+                                <hr>
+                                <p>Something for everyone for both local and international furniture buyers!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="about-item text-center">
+                                <i class="fa fa-pencil"></i>
+                                <h3>ACHIEVEMENT</h3>
+                                <hr>
+                                <p>I realized that if I was going to achieve anything in life I had to be aggressive. I had to get out there and go for it.A dream becomes a goal when action is taken its achievement.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="happy">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="customer">
+                        <h1 class="counter1">43393</h1>
+                        <p>Happy Customers</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="customer">
+                        <h1 class="counter2">45789</h1>
+                        <p>Total Customers</p>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="customer">
+                        <h1>24 hr</h1>
+                        <p>Support Available</p>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="customer">
+                        <h1 class="counter3">99%</h1>
+                        <p>Positive Reviews</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <section class="team-section">
+            <div class="container2">
+                <div class="row1">
+                    <div class="section-title">
+                        <h1>Our Team</h1>
+                        <p> “Unity is strength. . . when there is teamwork and collaboration, wonderful things can be achieved.”</p>
+                    </div>
+                </div>
+                <div class="row1">
+                    <div class="team-items">
+                        <div class="item">
+                            <img src="images/555.PNG" alt="team" />
+                            <div class="inner">
+                                <div class="infom">
+                                    <h5>Mohammad Hassan</h5>
+                                    <p>Web Developer</p>
+                                    <div class="social-links">
+                                        <a href=""><span class="fa fa-facebook"></span></a>
+                                        <a href=""><span class="fa fa-twitter"></span></a>
+                                        <a href=""><span class="fa fa-linkedin"></span></a>
+                                        <a href=""><span class="fa fa-youtube"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/Capture1.PNG" alt="team" />
+                            <div class="inner">
+                                <div class="infom">
+                                    <h5>Mashkoor Ahmed</h5>
+                                    <p>Web Developer</p>
+                                    <div class="social-links">
+                                        <a href=""><span class="fa fa-facebook"></span></a>
+                                        <a href=""><span class="fa fa-twitter"></span></a>
+                                        <a href=""><span class="fa fa-linkedin"></span></a>
+                                        <a href=""><span class="fa fa-youtube"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/samad (1).jpg" alt="team" />
+                            <div class="inner">
+                                <div class="infom">
+                                    <h5>Abdul Samad</h5>
+                                    <p>Web Developer</p>
+                                    <div class="social-links">
+                                        <a href=""><span class="fa fa-facebook"></span></a>
+                                        <a href=""><span class="fa fa-twitter"></span></a>
+                                        <a href=""><span class="fa fa-linkedin"></span></a>
+                                        <a href=""><span class="fa fa-youtube"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/samad (2).jpg" alt="team" />
+                            <div class="inner">
+                                <div class="infom">
+                                    <h5>Hasnain Jamil</h5>
+                                    <p>Web Developer</p>
+                                    <div class="social-links">
+                                        <a href=""><span class="fa fa-facebook"></span></a>
+                                        <a href=""><span class="fa fa-twitter"></span></a>
+                                        <a href=""><span class="fa fa-linkedin"></span></a>
+                                        <a href=""><span class="fa fa-youtube"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CONTACT US -->
+        <div id="contactpage">
+            <div class="content">
+                <h2>CONTACT US<br>
+                    <small>Contact us to gather more information about us</small>
+                </h2>
+                <a href="#shop"><input type="button" value="EXPLORE STORE"></a>
+            </div>
+            <div class="c123">
+                <div class="container">
+                    <div class="row" id="add">
+                        <div class="col-md-3 ">
+                            <marquee behavior="" scrollamount="40" direction="right"> <img src="images/fast-delivery.png" width="150" style="margin-right: 20px;"></marquee>
+                            <div class="test">
+                                <h3 id="fastest">Fatest Delivery Service</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mt-2 border-left">
+                            <div class="icon"><i class="fa fa-map-marker"></i></div>
+                            <div class="test">
+                                <h4>ADDRESS</h4>
+                                <p>Lane 12 Bukhari Commercial DHA <br>Karachi</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3  mt-2  border-left">
+                            <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                            <div class="test">
+                                <h4>CONTACT</h4>
+                                <p>0336-0381966 | 0305-2237725 | 0315-2656101</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3  mt-2 border-left ">
+                            <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                            <div class="test">
+                                <h4>EMAIL</h4>
+                                <p>HUDSONFURNISHING@gmail.<br>com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row" id="column">
+                <div class="col-md-4 col-sm-12 mt-3" id="col1">
+                    <img src="images/c2.jpg">
+                    <h3>Track Order</h3>
+                    <p>Track your current order, view or <br>cancel an order</p>
+                </div>
+                <div class="col-md-4 col-sm-12 mt-3 " id="col2">
+                    <img src="images/c1.jpg">
+                    <h3>Return or Change <br>a product</h3>
+                    <p>Find out all about how to exchange or<br> return your products</p>
+                </div>
+
+
+                <div class="col-md-4 col-sm-12 mt-3" id="col4">
+                    <img src="images/1.jpg">
+                    <h3>Spare parts</h3>
+                    <p>Need an extra hinge?Spare big <br>or small, we've got you covered </p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2 contact">
+
+            <div class="col-md-6 col-sm-12 mt-3">
+                <div class="input mt-2">
+                    <h3>SEND MESSAGE</h3>
+                    <form>
+                        <div class="inputbox p-2">
+                            <h6>FULL NAME</h6>
+                            <input type="text" required="required">
+
+                        </div>
+                        <div class="inputbox p-2">
+                            <h6>EMAIL</h6>
+                            <input type="email" required="required">
+
+                        </div>
+                        <div class="inputbox p-2">
+                            <h6>TYPE MESSAGE</h6>
+                            <textarea name="" id="" cols="50" rows="5" required="required"></textarea>
+
+                        </div>
+                        <center>
+                            <button class="btn btn-dark p-2">SEND MESSAGE</button>
+                        </center>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 mt-3">
+                <div style="width: 100%"><iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=aptech%20saddar+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                    href="https://www.maps.ie/distance-area-calculator.html">measure distance on
+                    map</a></iframe></div>
+            </div>
+        </div>
+        </div>
+        <!-- create -->
+        <div class="bodysignup" id="form">
+            <div class="signup">
+                <div class="start">
+                    <h3>CREATE AN ACCOUNT</h3>
+                </div>
+                <div class="input">
+                    <form>
+                        <h5>FIRST NAME</h5>
+                        <input type="text" placeholder="ENTER FIRST NAME" class="form-control" required>
+                        <h5>LAST NAME</h5>
+                        <input type="text" placeholder="ENTER LAST NAME" class="form-control" requiredrequired>
+                        <h5>EMAIL</h5>
+                        <input type="email" placeholder="ENTER EMAIL" class="form-control" requiredrequired>
+                        <h5>EMAIL CONFIRMATION</h5>
+                        <input type="email" placeholder="CONFIRM YOUR EMAIL" class="form-control" requiredrequired>
+                        <h5>PHONE NUMBER</h5>
+                        <input type="tel" placeholder="ENTER PHONE NUMBER" class="form-control" requiredrequired>
+                        <h5>PASSWORD</h5>
+                        <input type="password" placeholder="ENTER PASSWORD" class="form-control" id="pass3" required>
+                        <input type="checkbox" onclick="dispaly3()" id="passwordcheck">
+                        <h5 id="show1">Show password</h5>
+
+                        <h5>CONFIRM PASSWORD</h5>
+                        <input type="password" placeholder="CONFIRM YOUR PASSWORD" class="form-control" id="pass2" required>
+                        <input type="checkbox" onclick="display1()" id="passwordcheck">
+                        <h5 id="show2">Show password</h5>
+
+
+                        <h5>ADDRESS LINE 1</h5>
+                        <input type="text" placeholder="ENTER ADDRESS" class="form-control" requiredrequired>
+                        <h5>ADDRESS LINE 2</h5>
+                        <input type="text" placeholder="ENTER LOCALITY" class="form-control" requiredrequired>
+                        <h5>BLOCK/UNIT</h5>
+                        <input type="text" placeholder="BLOCK OR UNIT" class="form-control" requiredrequired>
+                        <h5>ZIP CODE</h5>
+                        <input type="number" placeholder="ZIPCODE" class="form-control" requiredrequired>
+                        <h5>CITY</h5>
+                        <input type="text" placeholder="ENTER YOUR CITY" class="form-control" required>
+                        <h5>COUNTRY</h5>
+                        <input type="text" placeholder="ENTER YOUR COUNTRY" class="form-control" required>
+                        <br>
+                        <input type="checkbox" id="check" required>
+                        <p>I ACCEPT ALL TERMS & CONDITIONS </p>
+                        <button class="btn btn-success" id="submit" href="#">SUBMIT</button>
+
+
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!---------------footer section--------------------->
+
+        <footer class="footer">
+            <div class="container3">
+                <div class="row2">
+                    <div class="footer-col">
+                        <img src="images/logo2.png">
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="compony">company <br>
+                            <hr>
+                        </h4>
+                        <ul>
+                            <li><a href="#about">about us</a></li>
+                            <li><a href="#service">our services</a></li>
+                            <li><a href="#our Gallery">Our gallery</a></li>
+                            <li><a href="#contact">contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help <br>
+                            <hr>
+                        </h4>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/FAQ">FAQ</a></li>
+                            <li><a href="https://www.shipping.com/">shipping</a></li>
+                            <li><a href="https://jamapunji.pk/">returns</a></li>
+                            <li><a href="#home">order status</a></li>
+                            <li><a href="https://www.paypal.com/">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>online shop <br>
+                            <hr>
+                        </h4>
+                        <ul>
+                            <li><a href="#">Beautiful Bed</a></li>
+                            <li><a href="#">Chairs</a></li>
+                            <li><a href="#">Table</a></li>
+                            <li><a href="#">ShowCase</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>follow us <br>
+                            <hr>
+                        </h4>
+                        <div class="social-link">
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/mashkoor.ahmed_official/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <div class="mainreview">
+                            <h4>REVIEW OUR SERVICES
+                                <hr>
+                            </h4>
+
+                            <input type="email" placeholder="ENTER YOUR EMAIL" id="reviewemail">
+                            <br>
+                            <h5 id="one" class="fa fa-star" onclick="first()"></h5>
+                            <h5 id="two" class="fa fa-star" onclick="second()"></h5>
+                            <h5 id="three" class="fa fa-star" onclick="third()"></h5>
+                            <h5 id="four" class="fa fa-star" onclick="fourth()"></h5>
+                            <h5 id="five" class="fa fa-star" onclick="fifth()"></h5>
+                            <br>
+
+                            <textarea class="reviewbox" name="ENTER YOUR REVIEW" id="" cols="28" rows="5"></textarea>
+                            <br>
+                            <button id="ok">SEND</button>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+        <script src="jquery.counterup.min.js"></script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+
+        <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+        <!--Second Link-->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+        <!--Third Link-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script>
+            $('.counter1').counterUp({
+                delay: 10,
+                time: 1300
+            });
+            $('.counter2').counterUp({
+                delay: 10,
+                time: 1300
+            });
+        </script>
+
+
+
+        <!-- jquery cdn link  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- magnific popup js cdn link  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+        <script>
+            $(document).ready(function() {
+
+                $('.buttons').click(function() {
+
+                    $(this).addClass('active').siblings().removeClass('active');
+
+                    var filter = $(this).attr('data-filter')
+
+                    if (filter == 'all') {
+                        $('.image').show(400);
+                    } else {
+                        $('.image').not('.' + filter).hide(200);
+                        $('.image').filter('.' + filter).show(400);
+                    }
+
+                });
+
+                $('.gallery').magnificPopup({
+
+                    delegate: 'a',
+                    type: 'image',
+                    gallery: {
+                        enabled: true
+                    }
+
+                });
+
+            });
+        </script>
+
+</body>
+
+</html>
