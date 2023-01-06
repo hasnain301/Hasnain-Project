@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    /*background: linear-gradient(90deg ,#0e3595 0%,#0e3595 30%,#030303 30%,#000000 100%);*/
+    background-image: url(Images/bg.jpg);
+}
+.Contactus{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+.Contactus .head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+h2
+{
+    color: rgb(0, 0, 0);
+    font-weight: 750;
+}
+.Form{
+    grid-area: Form;
+}
+.Info{
+    grid-area: Info;
+}
+.Map{
+    grid-area: Map;
+}
+.Contact{
+    padding: 40px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    
+}
+.body{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: 
+    "Form Info"
+    "Form Map";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+.Contact h3{
+    color: #1980c5;
+    font-weight: 700;
+    font-size: 1.7em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* button pop up*/
+/*.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+.model-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top:0; left:0;
+    transform: scale(0);
+}
+.model-container .model{
+    height: 400px;
+    max-width: 350px;
+    margin: 0 10px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+.model-container .model .fa-heart{
+    font-size: 100px;
+    color: #f9ca24;
+    padding-bottom: 50px;
+    margin: 10px 0;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0,.3),
+                             30px 30px 0 #ccc
+                             -30px 30px 0 #333;
+}
+.model-container .model h3{
+    color: #333;
+    font-size: 25px;
+}
+.model-container .model p{
+    color: #666;
+    margin: 20px 0;
+}
+.model-container .model button{
+    height: 35px;
+    width: 120px;
+    background: #333;
+    color:#fff;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+}
+.model-container .model button:hover{
+    opacity: .8;
+}
+.model-container .model .fa-times{
+    position: absolute;
+    top: 15px; right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}/*
+/* Form */
+.formBox{
+    position: relative;
+    width: 100%;
+}
+.formBox .row50{
+    display: flex;
+    gap: 20px;
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%; 
+}
+.formBox .row100 .inputBox{
+    width: 100%;
+}
+.inputBox span{
+    color: #111111;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.inputBox input{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+}
+.inputBox textarea{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+#Submit{
+    color: black;
+    background-color: #cf1b1ba8;
+    border: none;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background 0.50s;
+}
+#Submit:hover{
+    background: #333;
+    color: white;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0,.3);
+}
+.inputBox ::placeholder{
+    color: rgba(75, 77, 92, 0.39);
+}
+
+/* Info */
+
+.Info{
+    background: #1142be;
+}
+.Info h3{
+    color: #fff;
+}
+.Info .infoBox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.Info .infoBox div span{
+    min-width: 40px;
+    height: 40px;
+    color: #fff;
+    background: #18b7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.Info .infoBox div p{
+    color: #fff;
+}
+.Info .infoBox div a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.Social{
+    margin-top: 40px;
+    display: flex;
+}
+.Social li{
+    list-style: none;
+    margin-right: 15px;
+}
+.Social li a{
+    color: #fff;
+    font-size: 2em;
+    color: #ccc;
+}
+.Social li a:hover{
+    color: black;
+}
+/* Map */
+.Map{
+    padding: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 991px)
+{
+        .body{
+            background: #03a9f5;
+        }
+        .Contactus{
+            padding: 20px;
+        }
+        .body {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "Form "
+                "Info"
+                "Map";
+            grid-gap: 20px;
+            margin-top: 20px;
+        }
+       
+        .formBox .row50 {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+        }
+        .inputBox {
+            width: 100%;
+        }
+        .Contact {
+            padding: 30px;
+    }
+    .Map {
+        min-height: 300px;
+        padding: 0;
+    }
+}
