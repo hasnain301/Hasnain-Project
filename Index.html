@@ -11,6 +11,8 @@
 
 </head>
 <body>
+     <!--Contact Us-->
+     
     <div class="Contactus">
         <div class="head">
             <h2>Get In Touch</h2>
@@ -52,14 +54,26 @@
                </div>
                </div>
                <!--button Area-->
-               
+               <div class="container">
                <button id="Submit">Send Message</button>
-                            
+              </div>    
+
+              <div class="model-container">
+                <div class="model">
+                <i class="fa fa-heart"></i>
+                <h3>Thanks for Contacting Us</h3>
+                <p>We will send you reply on your gven email..</p>
+                <button>Ok</button>
+                <i id="close" class="fa fa-times"></i>
+              </div>
+              </div>
+
+
               </div>       
             </div>
                 </form>
             
-
+                <span id="msg"></span>
             <!--Info Area-->
             <div class="Contact Info">
               <h3>Contact Info</h3>
@@ -69,7 +83,7 @@
                   <p>Business Recorder Road,Patel Para<br>Karachi</p>
                 </div>
                 <div>
-                  <span><ion-icon name="mail"></ion-icon></span>
+                  <span style="cursor: pointer;"><ion-icon name="mail"></ion-icon></span>
                   <a href="https://mail.google.com/mail/u/1/#advanced-search/to=hasnain2206f%40aptechgdn.net&query=in%3Asent&isrefinement=true&todisplay=hasnain2206f%40aptechgdn.net?compose=new">Mail</a>
                 </div>
                 <div>
@@ -95,6 +109,19 @@
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+<script type="text/javascript">
+$(document).ready(function(){
+
+  $("#Submit").click(function(){
+    $(".model-container").css("transform","scale(1)");
+  })
+
+  $("#close").click(function(){
+    $(".model-container").css("transform","scale(0)");
+  })
+});
+
+</script>
 
 
 </body>
