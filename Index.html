@@ -7,7 +7,6 @@
     <title>Conatct Us</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
 </head>
 <body>
@@ -43,7 +42,7 @@
             </div>
              <div class="inputBox">
                 <span>Phone Number</span>
-              <input type="text" placeholder="Enter Your Number" pattern="{0-9}{11}" required style="border: none; border-bottom: 2px solid black;">
+              <input type="text" placeholder="Enter Your Phone Number" pattern="{0-9}{11}" required style="border: none; border-bottom: 2px solid black;">
               </div>
               </div>
 
@@ -54,19 +53,13 @@
                </div>
                </div>
                <!--button Area-->
-               <div class="container">
-               <button id="Submit">Send Message</button>
-              </div>    
+               
 
-              <div class="model-container">
-                <div class="model">
-                <i class="fa fa-heart"></i>
-                <h3>Thanks for Contacting Us</h3>
-                <p>We will send you reply on your gven email..</p>
-                <button>Ok</button>
-                <i id="close" class="fa fa-times"></i>
-              </div>
-              </div>
+               <button id="Submit" data-target="#mymodal" data-toggle="modal">Send Message</button>
+
+              
+
+              
 
 
               </div>       
@@ -109,17 +102,7 @@
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-<script type="text/javascript">
-$(document).ready(function(){
 
-  $("#Submit").click(function(){
-    $(".model-container").css("transform","scale(1)");
-  })
-
-  $("#close").click(function(){
-    $(".model-container").css("transform","scale(0)");
-  })
-});
 
 </script>
 
